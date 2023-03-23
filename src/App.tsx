@@ -5,7 +5,7 @@ import {Header} from "./components/Header/Header";
 import {Nav} from './components/Nav/Nav';
 import {Profile} from "./components/Profile/Profile";
 import {Dialogs} from "./components/Dilogs/Dialogs";
-import state from "./redux/state";
+
 
 export type navPropsType = {
     id: number
