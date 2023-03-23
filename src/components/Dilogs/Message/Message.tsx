@@ -1,6 +1,6 @@
 import React from 'react';
-import { MessPropsType } from '../Dialogs';
 import s from './../Dialogs.module.css';
+import {MessPropsType} from "../../../App";
 
 
 const Message = (props:MessPropsType) => {

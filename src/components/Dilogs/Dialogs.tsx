@@ -2,24 +2,16 @@ import React from 'react';
 import DialogsItem from "./DialogsItem/DialogsItem";
 import Message from "./Message/Message";
 import s from './Dialogs.module.css';
+import {DialPropsType, MessPropsType} from "../../App";
 
-export type DialPropsType = {
-    id: number
-    name: string
-}
 
-export type MessPropsType = {
-    id: number
-    message: string
-}
-
-type DialogsPropsType = {
+type DialogsPagePropsType = {
     dialogs: DialPropsType[]
     messages: MessPropsType[]
 }
 
 
-export const Dialogs = (props:DialogsPropsType) => {
+export const Dialogs = (props:DialogsPagePropsType) => {
 
 
 

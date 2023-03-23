@@ -1,9 +1,9 @@
 import React from 'react';
 import s from './Post.module.css'
-import { ProfPropsType} from "../../Profile";
+import {PostPropsType} from "../../../../App";
 
 export type PostsPropsType= {
-    post: ProfPropsType
+    post: PostPropsType
 }
 
 

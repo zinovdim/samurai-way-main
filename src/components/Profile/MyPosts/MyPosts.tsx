@@ -1,10 +1,10 @@
 import React from 'react';
 import s from './MyPosts.module.css';
 import {Post} from "./Posts/Post";
-import {ProfPropsType} from "../Profile";
+import {PostPropsType} from "../../../App";
 
 export type MyPostsPropsType= {
-    myPosts: ProfPropsType[]
+    myPosts: PostPropsType[]
 }
 
 export const MyPosts = (props: MyPostsPropsType) => {

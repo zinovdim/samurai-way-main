@@ -1,16 +1,17 @@
 import React from 'react';
 import './Header.css';
+import {AppPropsType} from "../../App";
 
 
-type HeaderPropsType = {
-    avatar:string
-}
+export type HeaderPropsType = {
+     head: string
+ }
 
 export const Header = (props: HeaderPropsType) => {
     return (
         <header className='header'>
            <img
-               src={props.avatar}
+               src={props.head}
            />
         </header>
     )

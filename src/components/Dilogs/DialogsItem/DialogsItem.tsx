@@ -1,7 +1,8 @@
 import React from 'react';
 import { NavLink } from 'react-router-dom';
 import s from './../Dialogs.module.css';
-import {DialPropsType} from "../Dialogs";
+import {DialPropsType} from "../../../App";
+
 
 
 

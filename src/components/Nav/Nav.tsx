@@ -1,19 +1,14 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import './Nav.css';
+import {navPropsType} from "../../App";
 
-
-type PropsType = {
-    id: number
-    name: string
-    link: string
+type NavPagePropsType={
+    nav: navPropsType[]
 }
 
-type NavPropsType = {
-    nav: PropsType[]
-}
 
-export const Nav = (props: NavPropsType) => {
+export const Nav = (props: NavPagePropsType) => {
 
     return (
         <nav className='Nav'>
