@@ -30,7 +30,7 @@ export const MyPosts = (props: MyPostsPropsType) => {
                     <textarea></textarea>
                 </div>
                 <div>
-                    <button>add post</button>
+                    <button onClick={()=>{}}>add post</button>
                 </div>
             </div>
             <div className={s.posts}>
