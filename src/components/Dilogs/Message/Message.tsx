@@ -1,6 +1,7 @@
 import React from 'react';
 import s from './../Dialogs.module.css';
-import {MessPropsType} from "../../../App";
+import {MessPropsType} from "../../../redux/state";
+
 
 
 const Message = (props:MessPropsType) => {

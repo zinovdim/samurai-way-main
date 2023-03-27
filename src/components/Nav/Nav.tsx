@@ -1,7 +1,8 @@
 import React from 'react';
 import {Link, NavLink} from 'react-router-dom';
 import './Nav.css';
-import {navPropsType} from "../../App";
+import {navPropsType} from "../../redux/state";
+
 
 type NavPagePropsType={
     nav: navPropsType[]

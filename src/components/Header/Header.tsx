@@ -1,6 +1,6 @@
 import React from 'react';
 import './Header.css';
-import {AppPropsType} from "../../App";
+
 
 
 export type HeaderPropsType = {

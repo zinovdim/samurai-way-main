@@ -2,7 +2,8 @@ import React from 'react';
 import DialogsItem from "./DialogsItem/DialogsItem";
 import Message from "./Message/Message";
 import s from './Dialogs.module.css';
-import {DialPropsType, MessPropsType} from "../../App";
+import {DialPropsType, MessPropsType} from "../../redux/state";
+
 
 
 type DialogsPagePropsType = {

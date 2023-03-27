@@ -1,43 +1,86 @@
-let state = {
+import { v1 } from "uuid";
+
+export type navPropsType = {
+    id: string
+    name: string
+    link: string
+}
+
+export type navNamePropsType = {
+    navName: navPropsType[]
+}
+
+export type DialPropsType = {
+    id: string
+    name: string
+}
+
+export type MessPropsType = {
+    id: string
+    message: string
+}
+
+export type DialogsPropsType = {
+    dialogsData: DialPropsType[]
+    messagesData: MessPropsType[]
+}
+
+export type PostPropsType = {
+    id: string
+    message: string
+    mess: number
+}
+
+export type PostsPropsType = {
+    posts: PostPropsType[]
+}
+
+export type StatePropsType = {
+    headerPage: string
+    navPage: navNamePropsType
+    dialogsPages: DialogsPropsType
+    profilePage: PostsPropsType
+}
+
+
+let state: StatePropsType = {
     headerPage: 'https://img.freepik.com/free-psd/logo-mockup-on-grey-wall_35913-2122.jpg?w=740&t=st=1664805418~exp=1664806018~hmac=f10f6fc8146cdcb3aa59776dd32732d40674037fa0519902e7de616960ec568c',
     navPage: {
         navName: [
-            {id: 1, link: '/profile', name: 'Profile'},
-            {id: 2, link: '/dialogs', name: 'Messages'},
-            {id: 3, link: '/news', name: 'News'},
-            {id: 4, link: '/music', name: 'Music'},
-            {id: 5, link: '/settings', name: 'Settings'}
+            {id: v1(), link: '/profile', name: 'Profile'},
+            {id: v1(), link: '/dialogs', name: 'Messages'},
+            {id: v1(), link: '/news', name: 'News'},
+            {id: v1(), link: '/music', name: 'Music'},
+            {id: v1(), link: '/settings', name: 'Settings'}
         ],
     },
     dialogsPages: {
         dialogsData: [
-            {id: 1, name: 'Dima'},
-            {id: 2, name: 'Billy'},
-            {id: 3, name: 'Arny'},
-            {id: 4, name: 'Mihalych'},
-            {id: 5, name: 'Piter'},
-            {id: 6, name: 'Bob'},
-            {id: 7, name: 'Ivan'}
+            {id: v1(), name: 'Dima'},
+            {id: v1(), name: 'Billy'},
+            {id: v1(), name: 'Arny'},
+            {id: v1(), name: 'Mihalych'},
+            {id: v1(), name: 'Piter'},
+            {id: v1(), name: 'Bob'},
+            {id: v1(), name: 'Ivan'}
         ],
         messagesData: [
-            {id: 1, message: 'Hi'},
-            {id: 2, message: 'Hello!'},
-            {id: 3, message: 'How are your?'},
-            {id: 4, message: 'Yo!'}
+            {id: v1(), message: 'Hi'},
+            {id: v1(), message: 'Hello!'},
+            {id: v1(), message: 'How are your?'},
+            {id: v1(), message: 'Yo!'}
         ]
     },
     profilePage: {
         posts : [
-            {id: 1, message: 'Hi!!', mess: 28},
-            {id: 2, message: 'Hello!!!', mess: 35},
-            {id: 3, message: 'Hy!!!', mess: 21},
-            {id: 4, message: 'Respect!!!', mess: 18},
-            {id: 5, message: 'Good Lack', mess: 35},
-            {id: 6, message: 'Good!!!', mess: 35},
-            {id: 7, message: 'Good Bye', mess: 35},
-            {id: 8, message: 'Helllooo', mess: 35}
+            {id: v1(), message: 'Hi!!', mess: 28},
+            {id: v1(), message: 'Hello!!!', mess: 35},
+
         ]
     },
 }
+
+
+
 
 export default state;
